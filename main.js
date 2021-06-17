@@ -54,4 +54,38 @@ const Contacts = [{
         isSaved: "SD Card"
     }
 ];
-console.log(Contacts);
+
+/*for loop
+for (let i = 1; i <= 10; i++) {
+    //console.log(i);
+};*/
+
+//while loop
+/*let f = 1;
+while (f < 11) {
+    console.log(`While loop value is ${f}`);
+    f++;
+};*/
+
+/*LOOP ARRAY OBJECTS
+for (let contact of Contacts) {
+    console.log(contact.fullName);
+
+};*/
+
+/*ARRAY SORT & FILTER
+const ContactsFullname = Contacts.map(function(contact) {
+    return contact.fullName;
+});
+console.log(ContactsFullname);*/
+
+/*const ContactsPhone = Contacts.filter(function(contact) {
+    return contact.isSaved == "Phone";
+}).map(function(contact) {
+    return contact.fullName;
+});
+console.log(ContactsPhone);*/
+
+/*JSON
+const ContactsJSON = JSON.stringify(Contacts);
+console.log(ContactsJSON);*/
