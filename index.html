@@ -4,11 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Javascript</title>
 </head>
 
 <body>
-    <h1>Javascript Tutorial</h1>
+    <div class="container">
+        <h2>Login Form</h2>
+        <img src="images/login.png" alt="Login image">
+        <form action="" method="post" class="form" id="myForm">
+            <div class="form-element">
+                <label>Username</label>
+                </br>
+                <input type="text" name="username" id="username" autocomplete="off" class="form-control" placeholder="Enter username" required>
+                </br>
+            </div>
+            <div class="form-element">
+                <label>Password</label>
+                </br>
+                <input type="password" name="password" id="password" class="form-control" placeholder="Enter password" required>
+                </br>
+                <button type="submit" id="btnLogin">Login</button>
+                <p>Forgot password? click
+                    <a href="#">here</a>.
+                </p>
+            </div>
+        </form>
+        <ul class="items">
+            <li class="item">Dell</li>
+            <li class="item">Huawei</li>
+            <li class="item">Acer</li>
+        </ul>
+    </div>
 
     <script src="main.js"></script>
 </body>
