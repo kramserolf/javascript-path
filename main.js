@@ -150,16 +150,42 @@
 // console.log(tao1.getFullName);
 
 //DOM SELECTION
-const Form = document.getElementById("myForm");
+/*const Form = document.getElementById("myForm");
 const Form2 = document.querySelector("#myForm");
 const Inputs = document.querySelectorAll(".form-element");
 console.log(Inputs);
 
 for (let input of Inputs) {
     console.log(input);
-};
+}; */
 
-//DOM MANIPULATION
+/*DOM MANIPULATION
 const ul = document.querySelector(".items");
 ul.firstElementChild.textContent = "A4tech";
-ul.children[1].textContent = "MSI";
+ul.children[1].textContent = "MSI"; */
+
+/*DOM EVENTS
+const btn = document.querySelector("#btnLogin");
+const Form = document.querySelector(".container");
+btn.addEventListener("click", function(e) {
+    e.preventDefault();
+    Form.style.background = "black";
+});*/
+
+//FORM VALIDATION
+const username = document.querySelector("#username");
+const password = document.querySelector("#password");
+const btn = document.querySelector("#btnLogin");
+const msg = document.querySelector("#msg");
+btn.addEventListener("click", function(e) {
+    e.preventDefault();
+
+    if (username.value.length === 0 || password.value.length === 0) {
+        console.log("Empty username or password");
+        msg.innerHTML = "<h4 class='error'>Please fill up username or password</h4>";
+        setTimeout(() => document.querySelector(".error").remove(), 4000);
+    } else {
+        console.log("true");
+    }
+
+});

@@ -44,7 +44,8 @@ p {
     text-align: right;
 }
 
-ul.items {
-    padding: 2rem;
-    font-size: 15px;
+.error {
+    font-weight: bold;
+    font-size: 13px;
+    color: red;
 }
